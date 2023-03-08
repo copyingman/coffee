@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* .news {
+            margin-top: 1rem;
+        }
+
+        .news>div {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .news-1,
+        .news-2,
+        .news-3-1,
+        .news-3-2,
+        .news-4 {
+            position: relative;
+        }
+
+        .news-1 {
+            width: 100%;
+            height: 600px;
+        }
+
+        .news-1-2 {
+            position: absolute;
+            top: 6rem;
+            left: 5rem;
+        }
+
+        .news-2-2 {
+            position: absolute;
+            top: 3rem;
+            left: 6rem;
+        }
+
+        .news-1 div,
+        .news-2 div {
+            width: 600px;
+            height: 100%;
+            position: absolute;
+            top: 6rem;
+            right: 12rem;
+        }
+
+        .news-3-2 {
+            margin-left: -110px;
+        }
+
+        .news-3-1>img:nth-child(2) {
+            position: absolute;
+            top: 3rem;
+            left: 6rem;
+        }
+
+        .news-3-2>img:nth-child(2) {
+            position: absolute;
+            top: 3rem;
+            left: 6rem;
+        }
+
+        .news-3-1>div,
+        .news-3-2>div {
+            width: 200px;
+            height: 100%;
+            position: absolute;
+            top: 3rem;
+            right: 12rem;
+        }
+
+        .news-4 img:nth-child(2) {
+            position: absolute;
+            top: 2rem;
+            left: 20rem;
+        }
+
+        .news-4 img:nth-child(3) {
+            position: absolute;
+            bottom: 3rem;
+            left: 6rem;
+        }
+
+        .news-4 img:nth-child(4) {
+            position: absolute;
+            bottom: 2.6rem;
+            left: 18rem;
+        }
+
+        .news-4 img:nth-child(5) {
+            position: absolute;
+            bottom: 2.2rem;
+            left: 30rem;
+        }
+
+        .news-4 img:nth-child(6) {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 43rem;
+        }
+
+        .news-4 img:nth-child(7) {
+            position: absolute;
+            bottom: 2rem;
+            left: 55rem;
+        } */
+
+        .new-bottom {
+            /* width: 1200px; */
+            /* height: 400px; */
+            margin-top: 3rem;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 40vh;
+        }
+
+        .new-bottom h1 {
+            color: #333;
+            font-family: Helvetica;
+            margin: 0;
+            padding: 0;
+            font-size: 10rem;
+            letter-spacing: -0.3rem;
+            position: relative;
+        }
+
+        .new-bottom h1::after {
+            content: attr(wenzi);
+            color: transparent;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+            clip-path: ellipse(100px 100px at 0% 50%);
+            animation: spotlight 5s infinite;
+            background-image: url(https://images.unsplash.com/photo-1579547621869-0ddb5f237392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+            background-size: 150%;
+            background-position: center center;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        @keyframes spotlight {
+            0% {
+                -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+                clip-path: ellipse(100px 100px at 0% 50%);
+            }
+
+            50% {
+                -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+                clip-path: ellipse(100px 100px at 100% 50%);
+            }
+
+            100% {
+                -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+                clip-path: ellipse(100px 100px at 0% 50%);
+            }
+        }
+
+        .news-1 {
+            /* height: 600px; */
+            margin-top: 1rem;
+        }
+
+        .news-4 {
+            position: relative;
+            height: 600px;
+            /* background-color: rgb(3, 71, 3); */
+            margin-top: 1rem;
+        }
+
+        .news-4 img:nth-child(1) {
+            position: absolute;
+            top: 2rem;
+            left: 25rem;
+
+        }
+
+        .news-4 img:nth-child(2) {
+            position: absolute;
+            top: 10rem;
+            left: 10%;
+        }
+
+        .news-4 img:nth-child(3) {
+            position: absolute;
+            top: 15rem;
+            left: 25%;
+        }
+
+        .news-4 img:nth-child(4) {
+            position: absolute;
+            top: 15rem;
+            left: 45%;
+        }
+
+        .news-4 img:nth-child(5) {
+            position: absolute;
+            top: 15rem;
+            left: 65%;
+        }
+
+        .news-4 img:nth-child(6) {
+            position: absolute;
+            top: 23rem;
+            left: 80%;
+        }
+
+        .news-2 {
+            margin-top: 1rem;
+            /* background-color: #f5f5f5; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-dark fixed-top">
+            <div class="container-fluid ms-5">
+                <a class="navbar-brand" href="./index.html">eight caffè</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse me-5" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./product.html">咖啡飲品</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./product2.html">蛋糕點心</a>
+                        </li>
+
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <button class="btn btn-link " type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <img src="./images/coffee/Shopping Bag-b.png" alt=""> </button>
+                        </li>
+                        <li class="nav-item ps-2 user">
+                            <a class="#" href="#"><img src="./images/coffee/user-b.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="new-bottom">
+            <h1 wenzi="eight caffè">eight caffè</h1>
+        </div>
+    </div>
+
+
+    <div class="container news">
+        <div class="news-1 row">
+            <!-- <img src="./images/bg1.png" alt=""> -->
+            <img src=" ./images/cooker.png" alt="" class="col-3" data-aos="fade-right">
+            <div data-aos="fade-left" class="col align-self-center text-center" style="margin-top: 2rem;">
+                <h3>主厨介紹</h3>
+                <p>潘嘎之交，網絡用語中指潘長江和《小兵張嘎》中嘎子的飾演者謝孟偉的交情。 [2] 又指行業內地位和資歷較高的前輩，通過假意勸告年輕人，使自己在行業競爭中處於有利地位的行為。</p>
+                <h4>主要作品</h4>
+                <p>在網絡直播中，潘長江對嘎子的飾演者謝孟偉説：“網上的東西都是虛擬的，我怕你把握不住啊孩子，因為這裏水很深.....”把嘎子的飾演者謝孟偉感動地一把鼻涕一把淚，説自己不會再從事酒類銷售。
+                    後來網友們發現，潘長江也開始了酒類產品的直播帶貨。網友調侃為“潘嘎之交”。 [1]
+                    2021年潘長江因為直播賣酒，還貢獻了一個年度熱詞――“潘嘎之交”。一次，潘長江在直播中勸説謝孟偉[微博]（《小兵張嘎》中嘎子的飾演者）不要再直播賣酒了。他“語重心長”地對謝孟偉説，“網上的東西都是虛擬的，我怕你把握不住啊孩子，因為這裏水很深……”謝孟偉聽後，很“誠懇”地表示自己不賣了。後來網友們發現，潘長江自己也去賣酒了，便反過來讓謝孟偉去勸勸潘長江。謝孟偉表示：“我真勸不了，你們別讓我勸了，我只能把自己管好。”
+                </p>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="col news-3-1">
+                <img src="./images/new-03.png" alt="">
+                <img src="./images/new-p-1.png" alt="" data-aos="fade-right">
+                <div data-aos="fade-left">
+                    <h3>草莓派拿鐵</h3>
+                    <p>潘嘎之交，網絡用語中指潘長江和《小兵張嘎》中嘎子的飾演者謝孟偉的交情。 [2] 又指行業內地位和資歷較高的前輩，通過假意勸告年輕人，使自己在行業競爭中處於有利地位的行為。</p>
+                </div>
+            </div>
+            <div class="col news-3-2">
+                <img src="./images/new-04.png" alt="">
+                <img src="./images/new-p-2.png" alt="" data-aos="fade-right">
+                <div data-aos="fade-left">
+                    <h3>草莓派抹茶拿鐵</h3>
+                    <p>潘嘎之交，網絡用語中指潘長江和《小兵張嘎》中嘎子的飾演者謝孟偉的交情。 [2] 又指行業內地位和資歷較高的前輩，通過假意勸告年輕人，使自己在行業競爭中處於有利地位的行為。</p>
+                </div>
+            </div>
+        </div> -->
+        <div class="news-2 row">
+            <!-- <img src="./images/bg2.png" alt=""> -->
+            <img src="./images/joinus.png" alt="" class="col-3" data-aos="fade-right">
+            <div data-aos="fade-left" class="col align-self-center text-center" style="margin-top: 2rem;">
+                <h3>加入我們</h3>
+                <p>潘嘎之交，網絡用語中指潘長江和《小兵張嘎》中嘎子的飾演者謝孟偉的交情。 [2] 又指行業內地位和資歷較高的前輩，通過假意勸告年輕人，使自己在行業競爭中處於有利地位的行為。</p>
+            </div>
+        </div>
+
+        <div class="news-4">
+            <!-- <img src="./images/new-環保.png" alt=""> -->
+            <img src="./images/hb0.png" alt="" data-aos="fade-right">
+            <img src="./images/hb1.png" alt="" data-aos="fade-up">
+            <img src="./images/hb2.png" alt="" data-aos="fade-up">
+            <img src="./images/hb3.png" alt="" data-aos="fade-up">
+            <img src="./images/hb4.png" alt="" data-aos="fade-up">
+            <img src="./images/hb5.png" alt="" data-aos="fade-up">
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- 購物車 -->
+    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark text-white py-2" style="color: #888;">
+        <div class="shejiao" style="margin-bottom:1rem; margin-top: 1rem;">
+            <a href="#"><img src="./images/coffee/Facebook.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/Instagram.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/Twitter.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/YouTube.png" alt=""></a>
+        </div>
+        <p style="opacity: 0.62;">
+            <a href="https://goo.gl/maps/GGjAd6NshUC6ATKU6"><img src="./images/coffee/Map Pin.png" alt="">桃園市中壢區健行科技大學對面
+            </a>&nbsp;
+            <img src="./images/coffee/Phone Map Pin.png" alt=""> 01-23456789
+        </p>
+        <p class="allright">© 2023 All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

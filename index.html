@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Microsoft JhengHei;
+            background-image: url(images/coffee/pexels-spencer-selover-428403.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .col-lg-5 {
+            background-color: rgba(219, 81, 26, 0.62);
+        }
+
+        .text {
+            height: 100vh;
+        }
+
+        .shejiao {
+            margin-bottom: 1rem;
+        }
+
+        .shejiao>img {
+            margin-bottom: 0.5vw;
+            opacity: 0.62;
+        }
+
+        .btn-link {
+            text-decoration: none;
+            /* color: #666; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
+            <div class="container-fluid ms-5">
+                <a class="navbar-brand" href="./index.html">eight caffè</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div></div>
+                <div class="collapse navbar-collapse me-5" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./product.html">咖啡飲品</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./product.html">蛋糕點心</a>
+                        </li>
+
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <button class="btn btn-link " type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <img src="./images/coffee/Shopping Bag-w.png" alt=""> </button>
+                        </li>
+                        <li class="nav-item ps-2 user">
+                            <a class="#" href="#"><img src="./images/coffee/user-w.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row g-0 justify-content-center align-items-center text">
+        <div class="text-center text-white p-2 col-lg-5 hidden-text4">
+            <h1>eight caffè</h1>
+            <p>喝了忘不了 </p>
+            <div class="shejiao">
+                <a href="#"><img src="./images/coffee/Facebook.png" alt=""></a> &nbsp;
+                <a href="#"><img src="./images/coffee/Instagram.png" alt=""></a> &nbsp;
+                <a href="#"><img src="./images/coffee/Twitter.png" alt=""></a> &nbsp;
+                <a href="#"><img src="./images/coffee/YouTube.png" alt=""></a>
+            </div>
+            <p style="opacity: 0.62;">
+                <a href="https://goo.gl/maps/GGjAd6NshUC6ATKU6"><img src="./images/coffee/Map Pin.png"
+                        alt="">桃園市中壢區健行科技大學對面
+                </a>&nbsp;
+                <img src="./images/coffee/Phone Map Pin.png" alt=""> 01-23456789
+            </p>
+        </div>
+    </div>
+
+    <!-- 購物車 -->
+    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+
+    <script src="./js/wenzihuadong.js"></script>
+</body>
+
+</html>

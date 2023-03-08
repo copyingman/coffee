@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>關於我們</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .col-lg>img {
+            width: 648px;
+            height: 370px;
+        }
+
+        .col-lg>h3 {
+            color: orangered;
+        }
+
+        .col-lg>p {
+            color: #888;
+        }
+
+        #banner {
+            background-image: url(./images/coffee/table2.jpg);
+            background-position: center center;
+            background-size: cover;
+            height: 300px;
+            margin-top: 3.5rem;
+        }
+
+        @media(max-width:375px) {
+            #banner {
+                display: none;
+            }
+
+            .container img {
+                width: 324px;
+                height: 185px;
+            }
+        }
+
+        @media(max-width:992px) {
+            .col-lg>img {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-dark fixed-top">
+            <div class="container-fluid ms-5">
+                <a class="navbar-brand" href="./index.html">eight caffè</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse me-5" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./product.html">咖啡飲品</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./product2.html">蛋糕點心</a>
+                        </li>
+
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <button class="btn btn-link " type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <img src="./images/coffee/Shopping Bag-b.png" alt=""> </button>
+                        </li>
+                        <li class="nav-item ps-2 user">
+                            <a class="#" href="#"><img src="./images/coffee/user-b.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- banner -->
+    <div id="banner"> </div>
+
+
+    <div class="container">
+        <div class="row g-0  box hidden-text4">
+            <div class="col-lg align-self-center text-center">
+                <h3>一杯與家人聚在一起喝的咖啡</h3>
+                <p>一杯咖啡，一杯色香味俱全的花式咖啡，需要你用視覺來欣賞，<br> 用嗅覺來聞香，用味覺來品嘗醇美，更需要你用心靈來體會咖啡帶來的 <br>
+                    溫馨祥寧靜謐悠遠。心靈，是人除了視、聽、嗅、味、觸之外的，又一感覺
+                    <br>器官——用心靈來感受和體會事物，可以捕捉到視覺、聽覺、嗅覺和觸覺 <br>所不能觸及和感受到的東西。
+                </p>
+            </div>
+            <div class="col-lg">
+                <img src="./images/coffee/together.jpg" alt="">
+            </div>
+        </div>
+        <div class="row g-0 hidden-text">
+            <div class="col-lg align-self-center text-center ">
+                <h3>無農藥種植讓你安心</h3>
+                <p>從食品安全的角度，有機驗證體系要求禽畜糞便要經過堆肥化，<br>施用禽畜糞田地需經兩期作非食用作物的輪作，才能再繼續耕作有機作物。<br>所以聯合國農糧組織報告結論，優良的有機農場管理可以降低大腸桿菌<br>以及微生物毒素對食品的感染。
+                </p>
+            </div>
+            <div class="col-lg order-lg-first">
+                <img src="./images/coffee/coffeetree.jpg" alt="">
+            </div>
+        </div>
+        <div class="row g-0 hidden-text2">
+            <div class="col-lg align-self-center text-center">
+                <h3>哥倫比亞原產咖啡豆</h3>
+                <p>哥倫比亞所生產的咖啡豆佔世界第二名約12%，雖然產量不如巴西，<br>但咖啡豆品質優良且多屬高海拔地區，經濕式的加工處理，<br>香醇厚實、甘酸滑口、勁道足。有種奇特的地瓜皮風味，<br>為咖啡中的佳品。常被用來增加其他咖啡的香味，<br>由於香味豐富，無論是單品飲用或是綜合都非常適值。
+                </p>
+            </div>
+            <div class="col-lg">
+                <img src="./images/coffee/coffeebeans.jpg" alt="">
+            </div>
+        </div>
+        <div class="row g-0 hidden-text3">
+            <div class="col-lg align-self-center text-center ">
+                <h3>資訊</h3>
+                <p>營業時間：12:00pm ~ 08:00pm <br> 地址: 桃園市中壢區健行科技大學對面 <br> 電話：01-23456789
+                </p>
+            </div>
+            <div class="col-lg order-lg-first">
+                <img src="./images/coffee/tuzi.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- backtop -->
+    <div class="backtop">
+        <img src="./images/coffee/backtop.png" alt="">
+    </div>
+
+    <!-- 購物車 -->
+    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark text-white py-2" style="color: #888;">
+        <div class="shejiao" style="margin-bottom:1rem; margin-top: 1rem;">
+            <a href="#"><img src="./images/coffee/Facebook.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/Instagram.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/Twitter.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/YouTube.png" alt=""></a>
+        </div>
+        <p style="opacity: 0.62;">
+            <a href="https://goo.gl/maps/GGjAd6NshUC6ATKU6"><img src="./images/coffee/Map Pin.png" alt="">桃園市中壢區健行科技大學對面
+            </a>&nbsp;
+            <img src="./images/coffee/Phone Map Pin.png" alt=""> 01-23456789
+        </p>
+        <p class="allright">© 2023 All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="./js/wenzihuadong.js"></script>
+    <script src="./js/public.js"></script>
+</body>
+
+</html>

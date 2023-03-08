@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .carousel .carousel-item {
+            height: 700px;
+        }
+
+        .carousel-item>img {
+            height: 700px;
+        }
+
+        #products h2 {
+            padding-top: 3.5rem;
+        }
+
+        #products img {
+            width: 300px;
+            height: 300px;
+        }
+
+
+
+        #btn1>button {
+            margin-right: 1rem;
+        }
+
+
+
+        .main-rexiao {
+            margin-top: 3.5rem;
+        }
+
+        .rexiao {
+            width: 1280px;
+            height: 400px;
+            margin: 50px auto;
+            /* border: 1px solid red; */
+            overflow: hidden;
+        }
+
+        .rexiao li {
+            width: 256px;
+            height: 400px;
+            float: left;
+            transition: all 500ms;
+        }
+
+        .rexiao ul {
+            width: 1280px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-dark fixed-top">
+            <div class="container-fluid ms-5">
+                <a class="navbar-brand" href="./index.html">eight caffè</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse me-5" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./new.html">最新消息</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./product.html">咖啡飲品</a>
+                        </li>
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./product2.html">蛋糕點心</a>
+                        </li>
+
+                        <li class="nav-item ps-4">
+                            <a class="nav-link" href="./about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item ps-5">
+                            <button class="btn btn-link " type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <img src="./images/coffee/Shopping Bag-b.png" alt=""> </button>
+                        </li>
+                        <li class="nav-item ps-2 user">
+                            <a class="#" href="#"><img src="./images/coffee/user-b.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!-- 菜單 -->
+    <div id="products" class="container">
+        <!-- <div class="container" id="btn1">
+            <button type="button" class="btn btn-outline-secondary btn-lg action anniu">經典</button>
+            <button type="button" class="btn btn-outline-success btn-lg anniu">茶飲</button>
+            <button type="button" class="btn btn-outline-warning btn-lg anniu">星冰樂</button>
+        </div> -->
+        <div class="btn-group-vertical position-fixed" role="group" aria-label="Vertical radio toggle button group"
+            id="btn1">
+            <input type="radio" class="btn-check anniu" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+            <label class="btn btn-outline-success" for="vbtn-radio1">經典</label>
+            <input type="radio" class="btn-check anniu" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+            <label class="btn btn-outline-success" for="vbtn-radio2">茶飲</label>
+            <input type="radio" class="btn-check anniu" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+            <label class="btn btn-outline-success" for="vbtn-radio3">冰咖</label>
+        </div>
+
+        <div class="items" id="">
+            <div class="row coffee hidden-text4 neirong">
+                <h2 style="color:#6c757d">經典</h2>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/c-meishi.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">美式</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/c-bohe.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">薄荷咖啡</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/c-kabuqinuo.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">卡布奇諾</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/c-bai.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">白咖啡</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/c-moka.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">摩卡</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/c-natie.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">拿鐵</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/c-nongsuo.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">濃縮黑咖啡</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/c-taifei.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">太妃</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row tea hidden-text2 neirong">
+                <h2 style="color:#198754">茶飲</h2>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/t-1.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">抹茶拿鐵</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/t-2.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">冰咖</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/t-3.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">冰抹茶咖啡</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/t-4.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">抹茶拿鐵</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bread hidden-text3 neirong">
+                <h2 style="color:#ffc107">冰咖</h2>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/xbl-1.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">咖啡星冰樂</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/xbl-2.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">焦糖星冰樂</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/xbl-3.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">焦糖可可碎片咖啡</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+                <div class="col product-card mb-5">
+                    <div class="product-image">
+                        <img src="./images/coffee/xbl-4.jpg" alt="Product Image">
+                        <div class="image-overlay">
+                            <button class="buy-button">加入購物車</button>
+                        </div>
+                    </div>
+                    <div class="product-info row">
+                        <h5 class="col mx-3">摩卡可可碎片星冰樂</h5>
+                        <p class="col-auto">$100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- backtop -->
+    <div class="backtop">
+        <img src="./images/coffee/backtop.png" alt="">
+    </div>
+
+
+
+    <!-- 購物車 -->
+    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-center bg-dark text-white py-2" style="color: #888;">
+        <div class="shejiao" style="margin-bottom:1rem; margin-top: 1rem;">
+            <a href="#"><img src="./images/coffee/Facebook.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/Instagram.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/Twitter.png" alt=""></a> &nbsp;
+            <a href="#"><img src="./images/coffee/YouTube.png" alt=""></a>
+        </div>
+        <p style="opacity: 0.62;">
+            <a href="https://goo.gl/maps/GGjAd6NshUC6ATKU6"><img src="./images/coffee/Map Pin.png" alt="">桃園市中壢區健行科技大學對面
+            </a>&nbsp;
+            <img src="./images/coffee/Phone Map Pin.png" alt=""> 01-23456789
+        </p>
+        <p class="allright">© 2023 All Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/wenzihuadong.js"></script>
+    <script src="./js/public.js"></script>
+
+</body>
+
+</html>
